@@ -6,15 +6,17 @@
 </head>
 <body>
     
-    <form>
+    <form method="POST" action="https://formspree.io/fokshei.d@gmail.com">
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Your name" value="">
+        <input type="text" name="name" id="name" placeholder="Your name" value="" required>
         <br>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="@">
+        <input type="email" name="email" id="email" placeholder="@" required>
         <br>
         <label for="comment">Comment:</label>
-        <taxtarea name="comment" id="comment"></textarea>
+        <taxtarea name="comment" id="comment"></textarea required>
+        <br>
+        <input type="text" name="car" id="car" pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}" title="AA9999AA" placeholder="AA00000AA"  required >
         <br>
         <input type="submit" name="submit" value="Send">
     </form>
